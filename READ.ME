@@ -1,0 +1,27 @@
+# Real-Time Python DDoS Traffic Monitor & Alert System
+
+A lightweight, Python-based network monitoring tool designed to capture live network traffic, analyze packet patterns against predefined thresholds, detect anomaly-based spikes indicative of potential Distributed Denial of Service (DDoS) attacks, and generate automated alerts while minimizing false positives.
+
+---
+
+## 🚀 Key Features
+* **Real-Time Packet Capture:** Monitors network traffic streams to track active connections and request rates per IP.
+* **Threshold-Based Anomaly Detection:** Flags IPs exceeding configured request-rate limits or packet-volume thresholds.
+* **Automated Alerting:** Logs suspicious activities and triggers terminal alerts for security triage.
+* **False-Positive Mitigation:** Implements filtering logic to separate legitimate high-frequency traffic (e.g., internal health checks, authorized services) from malicious bursts.
+
+---
+
+## 🛠️ Tech Stack & Environment
+* **Language:** Python 3
+* **Environment:** Kali Linux VM (VirtualBox)
+* **Libraries:** Built-in Python networking and logging modules (e.g., `socket`, `scapy` / standard library modules depending on implementation).
+
+---
+
+## 📂 Project Structure
+```text
+├── monitor.py              # Core Python script for traffic analysis and detection
+├── config.json             # Configuration file for thresholds and alert rules
+├── logs/                   # Directory storing real-time detection telemetry and logs
+└── project_report.pdf      # Detailed technical report and algorithm breakdown
